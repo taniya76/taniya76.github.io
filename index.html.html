@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <style>
+        body{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            width:100vw;
+            height:100vh;
+            background-image: url("C3mI3Az-dark-wallpaper-hd.jpg"); 
+        }
+
+        .col ,p{
+            font-weight: inherit;
+            float: inline-start;
+            font-variant-ligatures: discretionary-ligatures;
+            color: #807777;
+            font-family: sans-serif;
+        }
+
+        .srv {
+            color:#cbff2d;
+            font: message-box;
+        }
+        .btn{
+            background-color: #807777;
+            color: black;            
+        }
+    </style>
+    <title>Form></title>
+</head>
+
+<body>
+    <form action="./data.js" method="post">
+        <label for="identity" class="col">NAME: </label>
+        <div>
+            <input type="text" name="idy" id="identity">
+        </div><br>
+        <label for="age" class="col">AGE:</label>
+        <div>
+            <input type="text" name="myage" id="age">
+        </div><br>
+        <label for="DOB" class="col">Enter your DOB:</label>
+        <div>
+            <input type="datetime-local" name="date" id="DOB">
+        </div><br>
+        <label for="gender" class="col">GENDER:</label>
+        <div class="srv" id="gender">
+            MALE <input type="radio" name="mysex" > FEMALE <input type="radio" name="mysex">
+            OTHER <input type="radio" name="mysex">
+        </div><br>
+
+        <label for="colour" class="col">My fav colour:</label>
+        <div>
+            <input type="color" name="myfav" id="colour">
+        </div><br>
+        <label for="no" class="col">Enter mobile no:</label>
+        <div>
+            <input type="tel" name="myno" id="no">
+        </div><br>
+        <label for="email" class="col">E-mail:</label>
+        <div>
+            <input type="email" name="mymail" id="email">
+        </div><br>
+        <label for="pass" class="col">PASSWORD:</label>
+        <div>
+            <input type="password" name="mypass" id="pass">
+        </div><br>
+        <label for="file" class="col">choose a file:</label>
+        <div>
+            <input type="file" name="myf" id="file">
+        </div><br>
+        <div>
+            <input  class="btn" type="submit" value="submit now">
+            <input class="btn" type="reset" value="reset now">
+        </div><br>
+    </form>
+    <footer>
+        <p >Author: Taniya Mittal</p>
+    </footer>
+
+</body>
+
+</html>
